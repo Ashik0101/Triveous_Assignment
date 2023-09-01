@@ -110,6 +110,11 @@ const getProductById = async (req, res) => {
     // Find the product by its ID
     const product = await Product.find({ _id: productId });
 
+    if (!product) {
+      return res
+        .status(404)
+        .json({ message: `Product with ID ${productId} not found.` });
+    }
     res.status(200).json(product);
   } catch (error) {
     console.error(`Error fetching product with ID ${productId}:`, error);
@@ -119,9 +124,28 @@ const getProductById = async (req, res) => {
   }
 };
 
+// Decrement product quantity when product gets added to Cart
+const decrementProductQuantity = async (productId, quantityToDecrement) => {
+  // console.log("productid:-", productId, "quantity:-", quantityToDecrement)
+  const product = await Product.findById(productId);
+  if (!product) {
+    throw new Error(`Product with ID ${productId} not found`);
+  }
+  if (product.quantity < quantityToDecrement) {
+    throw new Error(`Not enough quantity available for product ${productId}`);
+  }
+
+  product.quantity -= quantityToDecrement;
+  if (product.quantity === 0) {
+    product.availability = false;
+  }
+  await product.save();
+};
+
 module.exports = {
   insertProduct,
   getCategories,
   getProductsByCategory,
   getProductById,
+  decrementProductQuantity,
 };

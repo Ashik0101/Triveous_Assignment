@@ -4,11 +4,16 @@ dotenv.config();
 const connectDB = require("./config/database");
 const userRouter = require("./routes/userRoutes");
 const productRouter = require("./routes/productRoutes");
+const cartRouter = require("./routes/cartRoutes");
+
 const connection = require("./config/database");
+
 const app = express();
 app.use(express.json());
+
 app.use("/user", userRouter);
 app.use("/products", productRouter);
+app.use("/cart", cartRouter);
 
 // Connect to the database
 app.listen(process.env.PORT, async () => {
