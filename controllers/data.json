@@ -1,0 +1,173 @@
+const products = [
+  {
+    "name": "Smartphone X",
+    "category": "Electronics",
+    "price": 799.99,
+    "description": "A powerful smartphone with advanced features.",
+    "image": "smartphone-x.jpg",
+    "availability": true,
+    "quantity": 10
+  },
+  {
+    "name": "Laptop Pro",
+    "category": "Electronics",
+    "price": 1299.99,
+    "description": "High-performance laptop for professionals.",
+    "image": "laptop-pro.jpg",
+    "availability": true,
+    "quantity": 15
+  },
+  {
+    "name": "Designer Dress",
+    "category": "Fashion",
+    "price": 299.99,
+    "description": "A stunning designer dress for special occasions.",
+    "image": "designer-dress.jpg",
+    "availability": true,
+    "quantity": 8
+  },
+  {
+    "name": "Sneakers",
+    "category": "Fashion",
+    "price": 89.99,
+    "description": "Comfortable sneakers for everyday wear.",
+    "image": "sneakers.jpg",
+    "availability": true,
+    "quantity": 30
+  },
+  {
+    "name": "Gaming Console",
+    "category": "Electronics",
+    "price": 399.99,
+    "description": "The latest gaming console for immersive gaming experiences.",
+    "image": "gaming-console.jpg",
+    "availability": true,
+    "quantity": 12
+  },
+  {
+    "name": "Necklace",
+    "category": "Jewelry",
+    "price": 249.99,
+    "description": "Elegant necklace with fine craftsmanship.",
+    "image": "necklace.jpg",
+    "availability": true,
+    "quantity": 5
+  },
+  {
+    "name": "Digital Camera",
+    "category": "Electronics",
+    "price": 499.99,
+    "description": "High-resolution digital camera for photography enthusiasts.",
+    "image": "digital-camera.jpg",
+    "availability": true,
+    "quantity": 7
+  },
+  {
+    "name": "Running Shoes",
+    "category": "Fashion",
+    "price": 129.99,
+    "description": "Lightweight running shoes for active lifestyles.",
+    "image": "running-shoes.jpg",
+    "availability": true,
+    "quantity": 25
+  },
+  {
+    "name": "Home Theater System",
+    "category": "Electronics",
+    "price": 699.99,
+    "description": "Immersive home theater system for entertainment.",
+    "image": "home-theater-system.jpg",
+    "availability": true,
+    "quantity": 4
+  },
+  {
+    "name": "Earrings",
+    "category": "Jewelry",
+    "price": 99.99,
+    "description": "Stylish earrings for a touch of elegance.",
+    "image": "earrings.jpg",
+    "availability": true,
+    "quantity": 18
+  },
+  {
+    "name": "Tablet",
+    "category": "Electronics",
+    "price": 249.99,
+    "description": "Portable tablet for work and play.",
+    "image": "tablet.jpg",
+    "availability": true,
+    "quantity": 9
+  },
+  {
+    "name": "Backpack",
+    "category": "Fashion",
+    "price": 49.99,
+    "description": "Durable backpack for outdoor adventures.",
+    "image": "backpack.jpg",
+    "availability": true,
+    "quantity": 22
+  },
+  {
+    "name": "Coffee Maker",
+    "category": "Appliances",
+    "price": 79.99,
+    "description": "Efficient coffee maker for brewing your favorite beverages.",
+    "image": "coffee-maker.jpg",
+    "availability": true,
+    "quantity": 11
+  },
+  {
+    "name": "Bracelet",
+    "category": "Jewelry",
+    "price": 39.99,
+    "description": "Charming bracelet to enhance your style.",
+    "image": "bracelet.jpg",
+    "availability": true,
+    "quantity": 20
+  },
+  {
+    "name": "Blender",
+    "category": "Appliances",
+    "price": 59.99,
+    "description": "Powerful blender for smoothies and food preparation.",
+    "image": "blender.jpg",
+    "availability": true,
+    "quantity": 14
+  },
+  {
+    "name": "Sunglasses",
+    "category": "Fashion",
+    "price": 79.99,
+    "description": "Stylish sunglasses to protect your eyes.",
+    "image": "sunglasses.jpg",
+    "availability": true,
+    "quantity": 18
+  },
+  {
+    "name": "Desk Chair",
+    "category": "Furniture",
+    "price": 149.99,
+    "description": "Comfortable desk chair for your workspace.",
+    "image": "desk-chair.jpg",
+    "availability": true,
+    "quantity": 7
+  },
+  {
+    "name": "Toaster Oven",
+    "category": "Appliances",
+    "price": 69.99,
+    "description": "Versatile toaster oven for cooking and baking.",
+    "image": "toaster-oven.jpg",
+    "availability": true,
+    "quantity": 10
+  },
+  {
+    "name": "Duffle Bag",
+    "category": "Fashion",
+    "price": 34.99,
+    "description": "Spacious duffle bag for travel and sports.",
+    "image": "duffle-bag.jpg",
+    "availability": true,
+    "quantity": 13
+  }
+];
