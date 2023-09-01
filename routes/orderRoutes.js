@@ -17,4 +17,4 @@ orderRouter.get(
 //Route to get order details by id
 orderRouter.get("/:orderId", authMiddleware, orderController.getOrderDetails);
 
-module.exports = { orderRouter };
+module.exports = orderRouter;
