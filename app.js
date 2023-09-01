@@ -1,12 +1,13 @@
 const express = require("express");
 const dotenv = require("dotenv");
 dotenv.config();
+const connection = require("./config/database");
+
 const connectDB = require("./config/database");
 const userRouter = require("./routes/userRoutes");
 const productRouter = require("./routes/productRoutes");
 const cartRouter = require("./routes/cartRoutes");
-
-const connection = require("./config/database");
+const { orderRouter } = require("./routes/orderRoutes");
 
 const app = express();
 app.use(express.json());
@@ -14,7 +15,7 @@ app.use(express.json());
 app.use("/user", userRouter);
 app.use("/products", productRouter);
 app.use("/cart", cartRouter);
-
+app.use("/order", orderRouter);
 // Connect to the database
 app.listen(process.env.PORT, async () => {
   try {
