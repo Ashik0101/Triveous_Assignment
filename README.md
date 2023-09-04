@@ -67,11 +67,11 @@ For detailed setup instructions, please refer to the [Installation Guide](#insta
 
 ![Products Endpoints](https://triveous-swagger-documentation-images.s3.amazonaws.com/Products.png)
 
-# Products - API endpoints related to Carts
+# Carts - API endpoints related to Carts
 
 ![Products Endpoints](https://triveous-swagger-documentation-images.s3.amazonaws.com/Cart.png)
 
-# Products - API endpoints related to Orders
+# Orders - API endpoints related to Orders
 
 ![Products Endpoints](https://triveous-swagger-documentation-images.s3.amazonaws.com/Orders.png)
 
