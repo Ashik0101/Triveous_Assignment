@@ -59,6 +59,10 @@ For detailed setup instructions, please refer to the [Installation Guide](#insta
 
 # Usage
 
+## Swagger Documentation :
+
+### Please visit the swagger documentation link : https://triveous-backend-assignment.onrender.com/api-docs/
+
 # Users - API endpoints related to Users
 
 ![Users Endpoints](https://triveous-swagger-documentation-images.s3.amazonaws.com/Users.png)
