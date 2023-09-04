@@ -10,7 +10,7 @@ const placeOrder = async (req, res) => {
       "items.product"
     );
 
-    if (!cart) {
+    if (!cart || !cart.items.length) {
       return res.status(404).json({
         message: "Cart not found. Please add items to your cart first.",
       });
