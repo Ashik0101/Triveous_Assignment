@@ -59,4 +59,22 @@ For detailed setup instructions, please refer to the [Installation Guide](#insta
 
 # Usage
 
-Will be updated soon.
+# Users - API endpoints related to Users
+
+![Users Endpoints](https://triveous-swagger-documentation-images.s3.amazonaws.com/Users.png)
+
+# Products - API endpoints related to Products
+
+![Products Endpoints](https://triveous-swagger-documentation-images.s3.amazonaws.com/Products.png)
+
+# Products - API endpoints related to Carts
+
+![Products Endpoints](https://triveous-swagger-documentation-images.s3.amazonaws.com/Cart.png)
+
+# Products - API endpoints related to Orders
+
+![Products Endpoints](https://triveous-swagger-documentation-images.s3.amazonaws.com/Orders.png)
+
+```
+
+```

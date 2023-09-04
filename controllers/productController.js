@@ -46,6 +46,7 @@ const insertProduct = async (req, res) => {
 };
 
 //Function to retrieve the categories
+
 const getCategories = async (req, res) => {
   try {
     const categories = await Product.aggregate([
@@ -80,7 +81,7 @@ const getProductsByCategory = async (req, res) => {
         description: 1,
         availability: 1,
         category: 1,
-        _id: 0,
+        _id: 1,
       }
     );
 
@@ -103,6 +104,7 @@ const getProductsByCategory = async (req, res) => {
 };
 
 // Function to retrieve product details by ID
+
 const getProductById = async (req, res) => {
   const { productId } = req.params;
 
@@ -126,7 +128,6 @@ const getProductById = async (req, res) => {
 
 // Decrement product quantity when product gets added to Cart
 const decrementProductQuantity = async (productId, quantityToDecrement) => {
-  // console.log("productid:-", productId, "quantity:-", quantityToDecrement)
   const product = await Product.findById(productId);
   if (!product) {
     throw new Error(`Product with ID ${productId} not found`);
